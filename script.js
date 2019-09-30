@@ -5,7 +5,7 @@ console.log(`%c"Quotes by William Shakespeare"`, headerStyle)
 
 const plays = {}
 
-for (const thisQuote of quotes) {
+for (const thisQuote of quotes) { // I changed the variable name because it made more sense to me with a different name
   if (!plays[thisQuote.play]) {
     plays[thisQuote.play] = [] // if the play doesn't yet exist, create a new array with play title
     plays[thisQuote.play].push(thisQuote.quote) // CRITICAL! Push this first quote to the new array
